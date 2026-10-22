@@ -1,0 +1,71 @@
+[
+  {
+    "id": "fixed-amount",
+    "title": "Fixed amount coupon",
+    "cart": [
+      { "id": "tshirt", "name": "T-Shirt", "category": "Clothing", "price": 350, "quantity": 1 },
+      { "id": "hat", "name": "Hat", "category": "Accessories", "price": 250, "quantity": 1 }
+    ],
+    "campaigns": [{ "type": "FIXED_AMOUNT", "amount": 50 }],
+    "expectedFinalPrice": 550
+  },
+  {
+    "id": "percentage",
+    "title": "Percentage coupon",
+    "cart": [
+      { "id": "tshirt", "name": "T-Shirt", "category": "Clothing", "price": 350, "quantity": 1 },
+      { "id": "hat", "name": "Hat", "category": "Accessories", "price": 250, "quantity": 1 }
+    ],
+    "campaigns": [{ "type": "PERCENTAGE", "percentage": 10 }],
+    "expectedFinalPrice": 540
+  },
+  {
+    "id": "category-percentage",
+    "title": "15% off Clothing",
+    "cart": [
+      { "id": "tshirt", "name": "T-Shirt", "category": "Clothing", "price": 350, "quantity": 1 },
+      { "id": "hoodie", "name": "Hoodie", "category": "Clothing", "price": 700, "quantity": 1 },
+      { "id": "watch", "name": "Watch", "category": "Accessories", "price": 850, "quantity": 1 },
+      { "id": "bag", "name": "Bag", "category": "Accessories", "price": 640, "quantity": 1 }
+    ],
+    "campaigns": [{ "type": "CATEGORY_PERCENTAGE", "category": "Clothing", "percentage": 15 }],
+    "expectedFinalPrice": 2382.5
+  },
+  {
+    "id": "points",
+    "title": "Redeem 68 points",
+    "cart": [
+      { "id": "tshirt", "name": "T-Shirt", "category": "Clothing", "price": 350, "quantity": 1 },
+      { "id": "hat", "name": "Hat", "category": "Accessories", "price": 250, "quantity": 1 },
+      { "id": "belt", "name": "Belt", "category": "Accessories", "price": 230, "quantity": 1 }
+    ],
+    "campaigns": [{ "type": "POINTS", "points": 68 }],
+    "expectedFinalPrice": 762
+  },
+  {
+    "id": "seasonal",
+    "title": "40 THB off every 300 THB",
+    "cart": [
+      { "id": "tshirt", "name": "T-Shirt", "category": "Clothing", "price": 350, "quantity": 1 },
+      { "id": "hat", "name": "Hat", "category": "Accessories", "price": 250, "quantity": 1 },
+      { "id": "belt", "name": "Belt", "category": "Accessories", "price": 230, "quantity": 1 }
+    ],
+    "campaigns": [{ "type": "SEASONAL", "every": 300, "discount": 40 }],
+    "expectedFinalPrice": 750
+  },
+  {
+    "id": "all-groups",
+    "title": "Coupon + On Top + Seasonal",
+    "cart": [
+      { "id": "tshirt", "name": "T-Shirt", "category": "Clothing", "price": 350, "quantity": 2 },
+      { "id": "hoodie", "name": "Hoodie", "category": "Clothing", "price": 700, "quantity": 1 },
+      { "id": "watch", "name": "Watch", "category": "Accessories", "price": 850, "quantity": 1 }
+    ],
+    "campaigns": [
+      { "type": "SEASONAL", "every": 500, "discount": 50 },
+      { "type": "PERCENTAGE", "percentage": 10 },
+      { "type": "CATEGORY_PERCENTAGE", "category": "Clothing", "percentage": 20 }
+    ],
+    "expectedFinalPrice": 1623
+  }
+]

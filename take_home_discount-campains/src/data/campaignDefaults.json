@@ -1,0 +1,7 @@
+{
+  "FIXED_AMOUNT": { "type": "FIXED_AMOUNT", "amount": 50 },
+  "PERCENTAGE": { "type": "PERCENTAGE", "percentage": 10 },
+  "CATEGORY_PERCENTAGE": { "type": "CATEGORY_PERCENTAGE", "category": "Clothing", "percentage": 15 },
+  "POINTS": { "type": "POINTS", "points": 68 },
+  "SEASONAL": { "type": "SEASONAL", "every": 300, "discount": 40 }
+}

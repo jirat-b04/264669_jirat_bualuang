@@ -1,0 +1,44 @@
+[
+  {
+    "id": "coupon-50",
+    "title": "฿50 off",
+    "description": "No minimum spend",
+    "campaign": { "type": "FIXED_AMOUNT", "amount": 50 }
+  },
+  {
+    "id": "coupon-200",
+    "title": "฿200 off",
+    "description": "Big cart deal",
+    "campaign": { "type": "FIXED_AMOUNT", "amount": 200 }
+  },
+  {
+    "id": "coupon-10pct",
+    "title": "10% off",
+    "description": "Whole cart",
+    "campaign": { "type": "PERCENTAGE", "percentage": 10 }
+  },
+  {
+    "id": "ontop-clothing-15",
+    "title": "15% off Clothing",
+    "description": "Fashion week deal",
+    "campaign": { "type": "CATEGORY_PERCENTAGE", "category": "Clothing", "percentage": 15 }
+  },
+  {
+    "id": "ontop-electronics-10",
+    "title": "10% off Electronics",
+    "description": "Gadget deal",
+    "campaign": { "type": "CATEGORY_PERCENTAGE", "category": "Electronics", "percentage": 10 }
+  },
+  {
+    "id": "seasonal-300-40",
+    "title": "฿40 off every ฿300",
+    "description": "Mid-year sale",
+    "campaign": { "type": "SEASONAL", "every": 300, "discount": 40 }
+  },
+  {
+    "id": "seasonal-1000-150",
+    "title": "฿150 off every ฿1,000",
+    "description": "Payday sale",
+    "campaign": { "type": "SEASONAL", "every": 1000, "discount": 150 }
+  }
+]

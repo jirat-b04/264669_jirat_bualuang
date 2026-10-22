@@ -1,0 +1,14 @@
+[
+  { "id": "tshirt", "name": "T-Shirt", "category": "Clothing", "price": 350, "image": "👕" },
+  { "id": "hoodie", "name": "Hoodie", "category": "Clothing", "price": 700, "image": "🧥" },
+  { "id": "jeans", "name": "Jeans", "category": "Clothing", "price": 990, "image": "👖" },
+  { "id": "dress", "name": "Summer Dress", "category": "Clothing", "price": 890, "image": "👗" },
+  { "id": "hat", "name": "Hat", "category": "Accessories", "price": 250, "image": "🧢" },
+  { "id": "belt", "name": "Belt", "category": "Accessories", "price": 230, "image": "🪢" },
+  { "id": "bag", "name": "Bag", "category": "Accessories", "price": 640, "image": "👜" },
+  { "id": "watch", "name": "Watch", "category": "Accessories", "price": 850, "image": "⌚" },
+  { "id": "earbuds", "name": "Earbuds", "category": "Electronics", "price": 1290, "image": "🎧" },
+  { "id": "power-bank", "name": "Power Bank", "category": "Electronics", "price": 590, "image": "🔋" },
+  { "id": "keyboard", "name": "Keyboard", "category": "Electronics", "price": 1590, "image": "⌨️" },
+  { "id": "mouse", "name": "Mouse", "category": "Electronics", "price": 490, "image": "🖱️" }
+]
